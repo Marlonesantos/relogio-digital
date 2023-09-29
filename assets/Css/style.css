@@ -34,12 +34,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: first baseline;
     color: #fff;
     background: rgba(5, 5, 5, .9);
     box-shadow: 5px 5px 15px rgba(0,0,0, .7);
     border: 80px;
-    letter-spacing: 3px;
+    letter-spacing: normal;
 }
 
 .relogio span {
@@ -182,7 +182,7 @@ body {
     
     .menu-lateral ul {
         display: flex;
-        gap: 50px;
+        gap: 20px;
         flex-direction: column;
 
     }
@@ -199,81 +199,108 @@ body {
    
 
 }
-@media screen and (max-width: 400px) {   
+@media screen and (max-width: 450px) {   
 
     body {
-        height: -800vh;
-        width: -800vh;
-        font-size: 5px;
-        background: linear-gradient(120deg, #fffc3bd8,  #111111da);
-        display: flex;
-      
+        height: 100vh;
+        background: linear-gradient(120deg, #fff83bd8,  #ff25edda);
+        display:flexbox;
+        align-items: center;
+        justify-content: center;
+        margin-top: -8px;
+        flex-direction: column;
+        gap: 14px;
     
+    }
+
+    .relogio {
+        display: contents;
+        align-items: center;
+        justify-content: space-around;
+        height: 20px;
+        width: 550px;
+        background: transparent;
+        border-radius: 80px;
+        box-shadow: 0px 8px 10px rgba(0,0,0, .5);
+    }
+    
+    .relogio div {
+        height: 170px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: first baseline;
+        color: #fff;
+        background: rgba(5, 5, 5, .9);
+        box-shadow: 5px 5px 15px rgba(0,0,0, .7);
+        border: 80px;
+        letter-spacing: normal;
     }
     
 
     .menu-lateral {
         
-        top: 8px;       
+        top: 30px;       
         right: 50px;
-        width: 1px;
-        display: run-in;
-        margin-top: 10px;           
+        width: 5px;
+        display: flex;       
+        
         min-height: 0vh;
-        padding: 1vh;
     }
     
     .menu-lateral ul {
-        display: flexbox;
+        display: flex;
         gap: 10px;
-        flex-direction: column;
-        padding: 10vh;
-
+        flex-direction: column-reverse;
     }
     
     
     .menu-lateral .icone:hover {
         transform: none;
-        padding: 100%;
     }
     
     .conteudo {
-        min-height: 2vh;
-        gap: 50px;
+        min-height: 10vh;
+        gap: 8px;
     }    
    
+
+
 }
 
-@media screen and (max-width: 320px) {   
+
+@media screen and (max-width: 340px) {   
 
     body {
-        height: 1vh;
-        width: 1vh;
+        height: 100vh;
+        width: 10vh;
         background: linear-gradient(120deg, #ff3b3bd8,  #267cd1da);
         display: flex;
-        font-size: 2px; 
+        font-size: 20px; 
         margin-top: auto;  
-        margin: auto;   
+        margin: auto;  
+        gap: 20px;
     
     }
     
 
     .menu-lateral {
         
-        top: 8px;       
+        top: 200px;       
         right: 10px;
-        width: 5px;
+        width: 50px;
         display: run-in;
         margin: auto;
         margin-top: 200px;           
-        min-height: 8vh;
+        min-height: 80vh;
         padding: auto;
         border-radius: 500px;
     }
     
     .menu-lateral ul {
         display: flexbox;
-        gap: 50px;
+        gap: 10px;
         flex-direction: column;
 
     }
@@ -285,9 +312,37 @@ body {
     }
     
     .conteudo {
-        min-height: 1vh;
-        gap: 0px;
+        min-height: 50vh;
+        gap: 50px;
     }    
+
+    .relogio {
+        display: contents;
+        align-items: center;
+        justify-content: space-around;
+        height: 200px;
+        width: 1px;
+        background: transparent;
+        border-radius: 80px;
+        box-shadow: 0px 8px 10px rgba(0,0,0, .5);
+    }
+    
+    .relogio div {
+        height: 170px;
+        width: 150px;        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: first baseline;
+        color: #fff;
+        background: rgba(5, 5, 5, .9);
+        box-shadow: 5px 5px 15px rgba(0,0,0, .7);
+        border: 85px;
+        letter-spacing: normal;
+    }
+
+ 
+
    
 }
 }
